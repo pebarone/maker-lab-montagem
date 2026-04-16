@@ -42,7 +42,7 @@ Garanta que abertas, elas se pareçam com isso:
 
 ### 4. Finalização e Travamento
 A tampa decorativa é colocada sobre as gavetas. O projeto é finalizado com o **Puxador Estrela** de 4.9cm, que é rosqueado no eixo central. Esta peça não só serve de decoração, mas funciona como a manivela principal do mecanismo.
-<img width="831" height="623" alt="image" src="https://github.com/user-attachments/assets/03fbef0f-5731-4f46-a1f7-06d3298f4c57" />
+<img width="623" height="831" alt="image" src="https://github.com/user-attachments/assets/03fbef0f-5731-4f46-a1f7-06d3298f4c57" />
 
 ---
 
