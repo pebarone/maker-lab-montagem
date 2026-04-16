@@ -1,4 +1,7 @@
 # Projeto: Caixa Mecânica Expansível (Lotus/Iris Box)
+## Integrantes
+- RM99781 - Pedro Augusto Barone
+- RM551579 - João Pedro Albuquerque
 
 Este projeto consiste numa caixa de armazenamento mecânica com um sistema de abertura síncrona, inspirada no movimento de uma flor (Lotus) ou de uma íris. A peça é totalmente produzida via impressão 3D e utiliza um sistema de engrenagens planetárias para expandir as gavetas.
 
@@ -29,6 +32,11 @@ A placa intermediária branca é colocada sobre as engrenagens. Os pinos quadrad
 ### 3. Instalação das Gavetas
 Cada pétala (gaveta) é encaixada nos pinos que sobressaem da placa intermediária. O design permite que, quando fechadas, as gavetas se unam para formar um cilindro sólido.
 <img width="831" height="623" alt="image" src="https://github.com/user-attachments/assets/757fa624-1a2e-4f22-a14c-71f98e181b6f" />
+
+Garanta que abertas, elas se pareçam com isso:
+
+<img width="831" height="623" alt="image" src="https://github.com/user-attachments/assets/31fb9863-1711-4d12-a9c6-46778bc0b3a6" />
+
 
 **Nota:** As gavetas devem ficar com o lado arredondado voltado para fora para garantir o fechamento correto e a estética do cilindro.
 
