@@ -30,7 +30,7 @@ A placa intermediária branca é colocada sobre as engrenagens. Os pinos quadrad
 Cada pétala (gaveta) é encaixada nos pinos que sobressaem da placa intermediária. O design permite que, quando fechadas, as gavetas se unam para formar um cilindro sólido.
 <img width="831" height="623" alt="image" src="https://github.com/user-attachments/assets/757fa624-1a2e-4f22-a14c-71f98e181b6f" />
 
-Note que, gavetas devem ficar com o lado arredondado para fora
+**Nota:** As gavetas devem ficar com o lado arredondado voltado para fora para garantir o fechamento correto e a estética do cilindro.
 
 ### 4. Finalização e Travamento
 A tampa decorativa é colocada sobre as gavetas. O projeto é finalizado com o **Puxador Estrela** de 4.9cm, que é rosqueado no eixo central. Esta peça não só serve de decoração, mas funciona como a manivela principal do mecanismo.
@@ -41,18 +41,62 @@ A tampa decorativa é colocada sobre as gavetas. O projeto é finalizado com o *
 ## ⚙️ Funcionamento Mecânico
 
 O mecanismo opera através de cinemática síncrona:
-1.  **Acionamento:** Ao girar a estrela superior, o utilizador rotaciona o eixo central.
-2.  **Transmissão:** A engrenagem central transfere o torque para as 5 engrenagens satélites.
-3.  **Expansão:** À medida que as engrenagens rodam, elas são forçadas a seguir o trilho curvo da placa intermediária.
-4.  **Abertura:** Este movimento empurra as gavetas para fora simultaneamente, revelando o conteúdo interno da caixa de forma fluida.
+1. **Acionamento:** Ao girar a estrela superior, o utilizador rotaciona o eixo central.
+2. **Transmissão:** A engrenagem central transfere o torque para as 5 engrenagens satélites.
+3. **Expansão:** À medida que as engrenagens rodam, elas são forçadas a seguir o trilho curvo da placa intermediária.
+4. **Abertura:** Este movimento empurra as gavetas para fora simultaneamente, revelando o conteúdo interno da caixa de forma fluida.
 
 ---
 
-## 📐 Especificações da Peça de Controlo (Estrela)
-* **Diâmetro:** 49 mm
-* **Espessura:** 5 mm
-* **Tipo de Encaixe:** Orifício central para parafuso/eixo rosqueado.
-* **Software de Modelagem:** OpenSCAD.
+## 📐 Especificações Técnicas da Estrela Central
+* **Diâmetro Total:** 49 mm (4.9 cm)
+* **Espessura da Base:** 5 mm (0.5 cm)
+* **Largura dos Braços:** 7.5 mm
+* **Altura do Miolo:** 3.5 mm (extra)
+* **Furo de Fixação:** 3 mm (inferior)
 
 ---
-**Nota:** Este projeto demonstra a precisão da impressão 3D em tolerâncias mecânicas, permitindo que engrenagens e eixos funcionem sem necessidade de rolamentos metálicos.
+
+## 💻 Código OpenSCAD (Versão Limpa)
+
+```openscad
+$fn = 100;
+diametro = 49;
+espessura = 5;
+num_pontas = 5;
+largura_braco = 7.5;
+comp_ponta = 4.5;
+raio_centro = 5.5;
+altura_miolo = 3.5;
+diametro_parafuso = 3;
+raio_total = diametro / 2;
+
+module braco() {
+    linear_extrude(height = espessura) {
+        polygon(points=[
+            [0, largura_braco/2],
+            [raio_total - comp_ponta, largura_braco/2],
+            [raio_total, 0],
+            [raio_total - comp_ponta, -largura_braco/2],
+            [0, -largura_braco/2]
+        ]);
+    }
+}
+
+module centro() {
+    cylinder(h = espessura + altura_miolo - 1.5, r = raio_centro);
+    translate([0, 0, espessura + altura_miolo - 1.5])
+        scale([1, 1, 0.6]) sphere(r = raio_centro);
+}
+
+difference() {
+    union() {
+        for (i = [0 : num_pontas - 1]) {
+            rotate([0, 0, i * (360 / num_pontas)])
+                braco();
+        }
+        centro();
+    }
+    translate([0, 0, -1])
+        cylinder(h = espessura + altura_miolo + 2, d = diametro_parafuso);
+}
