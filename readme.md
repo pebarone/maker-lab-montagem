@@ -1,10 +1,10 @@
-# 📦 Projeto: Caixa Mecânica Expansível (Lotus/Iris Box)
+# Projeto: Caixa Mecânica Expansível (Lotus/Iris Box)
 
 Este projeto consiste numa caixa de armazenamento mecânica com um sistema de abertura síncrona, inspirada no movimento de uma flor (Lotus) ou de uma íris. A peça é totalmente produzida via impressão 3D e utiliza um sistema de engrenagens planetárias para expandir as gavetas.
 
 ---
 
-## 🛠️ Componentes do Sistema
+## Componentes do Sistema
 
 O conjunto é formado pelas seguintes partes:
 * **Base com Trilho:** Estrutura inferior que suporta o mecanismo.
@@ -48,7 +48,7 @@ O mecanismo opera através de cinemática síncrona:
 
 ---
 
-## 📐 Especificações Técnicas da Estrela Central
+## Especificações Técnicas da Estrela Central
 * **Diâmetro Total:** 49 mm (4.9 cm)
 * **Espessura da Base:** 5 mm (0.5 cm)
 * **Largura dos Braços:** 7.5 mm
@@ -57,7 +57,14 @@ O mecanismo opera através de cinemática síncrona:
 
 ---
 
-## 💻 Código OpenSCAD (Versão Limpa)
+## Código OpenSCAD & Foto da modelagem
+# Base Inferior
+<img width="916" height="490" alt="image" src="https://github.com/user-attachments/assets/67636630-f868-41ba-a1a0-2d50c132b0c8" />
+
+# Base Superior
+
+<img width="920" height="496" alt="image" src="https://github.com/user-attachments/assets/8e0c0d23-e252-4eff-8b3f-21c5d80f8899" />
+
 
 ```openscad
 $fn = 100;
