@@ -20,21 +20,21 @@ O conjunto é formado pelas seguintes partes:
 
 ### 1. Sistema de Transmissão (Base)
 A montagem começa com o posicionamento das engrenagens na base. A engrenagem central é conectada ao eixo principal. As cinco engrenagens satélites são posicionadas ao redor, encaixando nos dentes da central e nos trilhos da base.
-<img width="1247" height="1663" alt="image" src="https://github.com/user-attachments/assets/b933bdad-443c-4c9a-a530-683e84e4f4ae" />
+<img width="623" height="831" alt="image" src="https://github.com/user-attachments/assets/b933bdad-443c-4c9a-a530-683e84e4f4ae" />
 
 ### 2. Interface e Guias
 A placa intermediária branca é colocada sobre as engrenagens. Os pinos quadrados das engrenagens satélites atravessam as fendas curvas desta placa. Estas fendas são cruciais, pois convertem o movimento circular das engrenagens num movimento radial de expansão.
-<img width="1663" height="1247" alt="image" src="https://github.com/user-attachments/assets/68a881ba-4fe1-4ba5-a401-d5a79a488a53" />
+<img width="831" height="623" alt="image" src="https://github.com/user-attachments/assets/68a881ba-4fe1-4ba5-a401-d5a79a488a53" />
 
 ### 3. Instalação das Gavetas
 Cada pétala (gaveta) é encaixada nos pinos que sobressaem da placa intermediária. O design permite que, quando fechadas, as gavetas se unam para formar um cilindro sólido.
-<img width="1663" height="1247" alt="image" src="https://github.com/user-attachments/assets/757fa624-1a2e-4f22-a14c-71f98e181b6f" />
+<img width="831" height="623" alt="image" src="https://github.com/user-attachments/assets/757fa624-1a2e-4f22-a14c-71f98e181b6f" />
 
 Note que, gavetas devem ficar com o lado arredondado para fora
 
 ### 4. Finalização e Travamento
 A tampa decorativa é colocada sobre as gavetas. O projeto é finalizado com o **Puxador Estrela** de 4.9cm, que é rosqueado no eixo central. Esta peça não só serve de decoração, mas funciona como a manivela principal do mecanismo.
-<img width="1247" height="1663" alt="image" src="https://github.com/user-attachments/assets/03fbef0f-5731-4f46-a1f7-06d3298f4c57" />
+<img width="831" height="623" alt="image" src="https://github.com/user-attachments/assets/03fbef0f-5731-4f46-a1f7-06d3298f4c57" />
 
 ---
 
